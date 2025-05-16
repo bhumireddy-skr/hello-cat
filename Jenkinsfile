@@ -27,19 +27,19 @@ pipeline {
 		        //sh "docker build . -t  skr1819/skrknowledge/${ENV}"
 			}
 		}
-		stage('Docker build image && push') {
-			steps {
+		//stage('Docker build image && push') {
+		//	steps {
 			    //script {
 			      // docker.withRegistry('https://registry.hub.docker.com', "${DOCKERHUB_CREDENTIALS_ID}") {
                     //   sh "docker push skr1819/skrknowledge/${ENV}:latest"
                    //}
 			    //}
-			}
-		}
-		stage('deploy to kuberneters') {
-			steps {
-				//sh "docker images"
-			}
-		}
+		//	}
+		//}
+		//stage('deploy to kuberneters') {
+		//	steps {
+		//		sh "docker images"
+		//	}
+		//}
     }
 }
