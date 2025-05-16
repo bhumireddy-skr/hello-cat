@@ -1,11 +1,11 @@
 pipeline {
 	agent {
-	    label 'node1'
+	    label 'master'
 	}
 	 tools {
         // Using the JDK and Maven tools configured in Global Tool Configuration
         //jdk 'JDK 11'  // Name of the JDK configuration
-        maven 'mvn'  // Name of the Maven configuration
+        //maven 'mvn'  // Name of the Maven configuration
         }
  	environment {
 		// DOCKER_TAG = getDockerTag()
@@ -23,7 +23,8 @@ pipeline {
 		}
 		stage('build') {
 			steps {
-				sh "mvn clean package -DskipTests -Djacoco.skip=true"
+			    bat 'mvn clean package'
+				//sh "mvn clean package -DskipTests -Djacoco.skip=true"
 		        //sh "docker build . -t  skr1819/skrknowledge/${ENV}"
 			}
 		}
