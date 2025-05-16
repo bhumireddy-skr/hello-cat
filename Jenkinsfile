@@ -33,7 +33,7 @@ pipeline {
 			      // docker.withRegistry('https://registry.hub.docker.com', "${DOCKERHUB_CREDENTIALS_ID}") {
                     //   sh "docker push skr1819/skrknowledge/${ENV}:latest"
                    //}
-			    }
+			    //}
 			}
 		}
 		stage('deploy to kuberneters') {
