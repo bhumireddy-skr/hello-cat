@@ -2,11 +2,6 @@ pipeline {
 	agent {
 	    label 'master'
 	}
-	 tools {
-        // Using the JDK and Maven tools configured in Global Tool Configuration
-        //jdk 'JDK 11'  // Name of the JDK configuration
-        //maven 'mvn'  // Name of the Maven configuration
-        }
  	environment {
 		// DOCKER_TAG = getDockerTag()
 		ENV = 'develop'
