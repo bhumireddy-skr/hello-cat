@@ -35,8 +35,10 @@ pipeline {
                          --upload-file target\\%WAR_NAME% ^
                          "%TOMCAT_URL%/manager/text/deploy?path=%DEPLOY_PATH%&update=true"
                     """
+                   }
                 }
-            }//stage('Docker build image && push') {
+	     }
+			//stage('Docker build image && push') {
 		//	steps {
 			    //script {
 			      // docker.withRegistry('https://registry.hub.docker.com', "${DOCKERHUB_CREDENTIALS_ID}") {
