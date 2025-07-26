@@ -4,7 +4,7 @@ pipeline {
 		// DOCKER_TAG = getDockerTag()
                 WAR_NAME = 'SimpleJavaWebProject-1.0-SNAPSHOT.war' // Change as needed
                 TOMCAT_URL = 'http://localhost:8080' // Change for your setup
-                DEPLOY_PATH = '/webapps' // Tomcat context path
+                DEPLOY_PATH = '/app' // Tomcat context path
 		ENV = 'develop'
 		DOCKERHUB_CREDENTIALS_ID = "7f9ba4ff-b64d-4cc4-8518-ee8d0d60ae73"
         }
