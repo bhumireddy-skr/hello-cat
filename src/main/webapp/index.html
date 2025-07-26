@@ -1,10 +1,117 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Cat Page</title>
+    <meta charset="UTF-8">
+    <title>Mastan Reddy's Pet Clinic</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts for a professional look -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            background: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #4db6ac;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            background: #333;
+            display: flex;
+            justify-content: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 15px 20px;
+            display: block;
+            font-weight: 500;
+            transition: background 0.3s;
+        }
+        nav a:hover {
+            background: #4db6ac;
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: #fff;
+            padding: 30px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        .owner {
+            font-size: 1.1em;
+            color: #666;
+            margin-bottom: 10px;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .cat-img {
+            display: block;
+            margin: 0 auto 20px auto;
+            max-width: 400px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        }
+        .clinic-info, .services, .contact {
+            margin-bottom: 30px;
+        }
+        .services ul {
+            list-style: disc inside;
+            padding-left: 0;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 40px;
+            font-size: 0.95em;
+        }
+    </style>
 </head>
 <body>
-<h1>Here is a cat:</h1>
-<img src="images/cat.jpg" alt="A cat" style="max-width:400px;">
+    <header>
+        <h1>Mastan Reddy's Professional Pet Clinic</h1>
+        <div class="owner">Owner: Mastan Reddy</div>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
+    <div class="container">
+        <section class="clinic-info">
+            <h2>Welcome to Our Pet Clinic!</h2>
+            <p>We provide professional care for your beloved pets, including cats, dogs, and more. Your pet’s health and happiness are our top priority.</p>
+        </section>
+        <img src="images/cat.jpg" alt="A cat" class="cat-img">
+        <section class="services">
+            <h2>Our Services</h2>
+            <ul>
+                <li>General Health Checkup</li>
+                <li>Vaccinations</li>
+                <li>Surgery & Emergency Care</li>
+                <li>Dental Care</li>
+                <li>Grooming & Boarding</li>
+            </ul>
+        </section>
+        <section class="contact">
+            <h2>Contact Us</h2>
+            <p>Visit us at: 123 Pet Street, Your City</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Email: info@mastanreddypetclinic.com</p>
+        </section>
+    </div>
+    <footer>
+        &copy; 2025 Mastan Reddy's Pet Clinic. All rights reserved.
+    </footer>
 </body>
 </html>
