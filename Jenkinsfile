@@ -13,7 +13,7 @@ pipeline {
 			steps {
 		             // start with  clean workspce
 			     deleteDir()
-		             //checkout branch
+		             //checkout branch//
 		             checkout scm
 			}
 		}
